@@ -19,7 +19,6 @@ class Command(BaseCommand):
                 {"name": "title", "type": "string"},
                 {"name": "text", "type": "string"},
             ],
-            "default_sorting_field": "id",
         }
         try:
             client.collections["books"].retrieve()

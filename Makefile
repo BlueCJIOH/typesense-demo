@@ -11,3 +11,8 @@ down:
 
 index:
 	docker compose run --rm web python manage.py index_books
+
+deploy:
+	$(MAKE) down
+	$(MAKE) build
+	$(MAKE) up
